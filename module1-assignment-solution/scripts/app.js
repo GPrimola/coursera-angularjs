@@ -14,8 +14,8 @@
 				} else {
 					msg = 'Too much!';
 				}
+				$scope.alert = 'We\'re not counting empty item! (e.g.: "L1, ,L3," counts 2 elements)'
 			}
-
 			$scope.resultMessage = msg;
 		}
 	}
