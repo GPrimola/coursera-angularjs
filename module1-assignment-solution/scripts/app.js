@@ -8,9 +8,11 @@
 	function LunchCheckController($scope) {
 		$scope.checkLunchList = function() {
 			$scope.color = 'red';
+			$scope.validation = 'has-error'
 			var msg = 'Please enter data first';
 			if($scope.lunchList) {
 				$scope.color = 'green'
+				$scope.validation = 'has-success'
 				$scope.alert = 'We\'re not counting empty item! (e.g.: "L1, ,L3," counts 2 elements)'
 				if($scope.lunchList.split(',').filter(elementsNotEmpty).length <= 3) {
 					msg = 'Enjoy!';

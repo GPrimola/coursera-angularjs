@@ -14,7 +14,7 @@
    <div class="container" ng-controller="LunchCheckController">
      <h1>Lunch Checker</h1>
 
-         <div class="form-group">
+         <div class="form-group {{validation}}">
              <input id="lunch-menu" type="text"
              placeholder="list comma separated dishes you usually have for lunch"
              class="form-control" ng-model="lunchList">
@@ -24,7 +24,7 @@
          </div>
          <div class="form-group message">
            <!-- Your message can go here. -->
-           <span style="padding: 2px 4px; border-radius: 3px; color: {{color}}; border: 1px solid white; border-color: {{color}}">{{resultMessage}}</span>
+           <span style="color: {{color}}">{{resultMessage}}</span>
          </div>
    </div>
 
