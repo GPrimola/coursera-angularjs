@@ -13,7 +13,6 @@ input[type="text"] {
   clear: both;
 }
 .loader {
-  display: none;
   margin-left: 5px;
   font-size: 10px;
   float: left;
