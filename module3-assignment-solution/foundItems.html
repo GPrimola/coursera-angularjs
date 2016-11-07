@@ -1,0 +1,18 @@
+<table ng-if="items.length" class="table">
+	<thead>
+		<tr>
+			<th>Code</th>
+			<th>Name</th>
+			<th>Description</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr ng-repeat="item in items">
+			<td>{{ item.short_name }}</td>
+			<td>{{ item.name }}</td>
+			<td>{{ item.description }}</td>
+			<td><button ng-click="dontWant({index: $index});" class="btn btn-xs btn-danger">Don't want this one</button></td>
+		</tr>
+	</tbody>
+</table>
